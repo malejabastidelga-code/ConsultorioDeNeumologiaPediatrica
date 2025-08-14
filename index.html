@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultorio de Neumología Pediátrica — Dra. Gloria Inés Delgado Maya</title>
+  <meta name="description" content="Consultorio de Neumología Pediátrica en Pasto. Asma infantil, bronquiolitis, alergias respiratorias y espirometría. Citas lun-jue 4–7 pm.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html{scroll-behavior:smooth}
+    body{font-family:'Fredoka',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .card{border-radius:1rem;border:1px solid rgba(15,23,42,.08);background:rgba(255,255,255,.75);backdrop-filter:blur(2px)}
+    .btn{border-radius:1rem;padding:.7rem 1rem;font-weight:600}
+    .btn-primary{background:#f472b6;color:#fff}
+    .btn-primary:hover{background:#ec4899}
+    .btn-outline{border:2px solid #f472b6;color:#ec4899;background:#fff}
+    .chip{font-size:.75rem;padding:.25rem .75rem;border-radius:999px}
+  </style>
+</head>
+<body class="bg-pink-50 text-slate-800">
+  <div class="h-1 w-full bg-gradient-to-r from-pink-300 via-sky-300 to-emerald-300"></div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-white/85 border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-pink-400 text-white grid place-content-center shadow-sm">🩺</div>
+        <span class="font-bold tracking-tight">Neumología Pediátrica</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#servicios" class="text-sm hover:text-slate-900 text-slate-600">Servicios</a>
+        <a href="#precios" class="text-sm hover:text-slate-900 text-slate-600">Precios</a>
+        <a href="#ubicacion" class="text-sm hover:text-slate-900 text-slate-600">Ubicación</a>
+        <a href="#contacto" class="text-sm hover:text-slate-900 text-slate-600">Contacto</a>
+        <a href="#contacto" class="btn btn-primary">Agendar cita</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t">
+      <div class="px-4 py-3 grid gap-2">
+        <a href="#servicios" class="py-2 text-slate-700">Servicios</a>
+        <a href="#precios" class="py-2 text-slate-700">Precios</a>
+        <a href="#ubicacion" class="py-2 text-slate-700">Ubicación</a>
+        <a href="#contacto" class="py-2 text-slate-700">Contacto</a>
+        <a href="#contacto" class="btn btn-primary mt-2">Agendar cita</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 -z-10">
+      <div class="absolute -top-24 -left-24 w-[32rem] h-[32rem] rounded-full bg-pink-100 blur-3xl"></div>
+      <div class="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] rounded-full bg-sky-100 blur-3xl"></div>
+    </div>
+    <div class="mx-auto max-w-6xl px-4 py-16 lg:py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="chip text-pink-800 bg-pink-100 inline-flex items-center gap-1">✨ Pediatría respiratoria</span>
+          <span class="chip text-emerald-800 bg-emerald-100 inline-flex items-center gap-1">🛡️ Atención segura</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1]">Cuidamos la respiración de tus niños</h1>
+        <p class="mt-4 text-lg text-slate-600 max-w-xl">
+          Consultorio dirigido por la <strong>Dra. Gloria Inés Delgado Maya</strong>.
+          Expertos en asma, bronquiolitis, alergias respiratorias y sueño infantil.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contacto" class="btn btn-primary">Reservar valoración</a>
+          <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+        </div>
+        <div class="mt-6 grid grid-cols-2 sm:flex sm:flex-wrap gap-4 text-slate-600 text-sm">
+          <div class="flex items-center gap-2">🫁 Espirometría infantil</div>
+          <div class="flex items-center gap-2">👶 Enfoque 100% pediátrico</div>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <div class="p-4 border-b"><h3 class="font-semibold flex items-center gap-2">🫀 Evaluación respiratoria pediátrica</h3></div>
+        <img src="https://images.unsplash.com/photo-1606811841689-23df5c3a3e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Niño realizando espirometría" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Servicios respiratorios 🫁</h2>
+      <p class="text-slate-600 mt-2">Atención pediátrica con enfoque humano y tecnología adecuada para niños.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card p-5"><h3 class="font-semibold mb-1">❤️‍🩹 Asma infantil</h3><p class="text-slate-600">Diagnóstico, control y plan de acción.</p></div>
+      <div class="card p-5"><h3 class="font-semibold mb-1">👶 Bronquiolitis / sibilancias</h3><p class="text-slate-600">Manejo integral y prevención.</p></div>
+      <div class="card p-5"><h3 class="font-semibold mb-1">🌸 Alergias respiratorias</h3><p class="text-slate-600">Rinitis, sinusitis y educación.</p></div>
+      <div class="card p-5"><h3 class="font-semibold mb-1">😴 Sueño y apnea</h3><p class="text-slate-600">Cribado de ronquido y respiración oral.</p></div>
+      <div class="card p-5"><h3 class="font-semibold mb-1">📈 Controles y seguimiento</h3><p class="text-slate-600">Acompañamiento cercano a familias.</p></div>
+      <div class="card p-5"><h3 class="font-semibold mb-1">📞 Teleconsulta</h3><p class="text-slate-600">Orientación a distancia cuando aplica.</p></div>
+    </div>
+    <div class="text-center mt-10"><a href="#contacto" class="btn btn-primary">❤️‍🩹 ¡Quiero agendar!</a></div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Precios 💗</h2>
+      <p class="text-slate-600 mt-2">Tarifas claras y pensadas para las familias.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <div class="flex items-center justify-between mb-4"><span class="font-semibold">✨ Consulta privada</span><span class="text-pink-600 font-extrabold">$150.000 COP</span></div>
+        <a href="#contacto" class="btn btn-primary w-full">Agendar</a>
+      </div>
+      <div class="card p-6">
+        <div class="flex items-center justify-between mb-4"><span class="font-semibold">🛡️ Convenio</span><span class="text-pink-600 font-extrabold">$100.000 COP</span></div>
+        <a href="#contacto" class="btn btn-primary w-full">Agendar</a>
+      </div>
+      <div class="card p-6">
+        <div class="flex items-center justify-between mb-4"><span class="font-semibold">🫁 Espirometría</span><span class="text-pink-600 font-extrabold">$120.000 COP</span></div>
+        <a href="#contacto" class="btn btn-primary w-full">Agendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold">¿Dónde estamos?</h2>
+      <p class="text-slate-600 mt-2">Calle 16 B # 34 - 25, Parana, Pasto, Colombia</p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-6 items-start">
+      <div class="card p-6">
+        <h3 class="font-semibold mb-3">📍 Dirección y horarios</h3>
+        <p><strong>Consultorio de Neumología Pediátrica</strong><br/>Dra. Gloria Inés Delgado Maya</p>
+        <p class="mt-2">🕓 Lunes a Jueves 4:00 PM – 7:00 PM (solo con cita previa)</p>
+        <p class="mt-2">📱 WhatsApp: <a class="text-pink-600 underline" href="https://wa.me/573175411532" target="_blank">317 541 1532</a><br/>☎️ Llamadas: 312 210 2382</p>
+        <div class="mt-4 p-4 rounded-xl bg-pink-50 border border-pink-100 text-pink-800">
+          <p class="font-semibold mb-1">Convenios</p>
+          <p>Protegemos, Previred Médica, Preferencial, Global Salud</p>
+        </div>
+      </div>
+      <div class="card overflow-hidden">
+        <iframe title="Mapa Consultorio Neumología Pediátrica" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full aspect-video" src="https://www.google.com/maps?q=Calle%2016%20B%20%23%2034%20-%2025%2C%20Parana%2C%20Pasto%2C%20Colombia&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Agenda tu cita</h2>
+      <p class="text-slate-600 mt-2">Déjanos tus datos y te contactamos.</p>
+    </div>
+    <div class="card p-6">
+      <form class="grid gap-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573175411532?text=' + encodeURIComponent('Hola, quiero agendar una cita. Mis datos: ' + document.getElementById('n1').value + ', paciente: ' + document.getElementById('n2').value + ', tel: ' + document.getElementById('t1').value + ', fecha: ' + document.getElementById('f1').value + ' ' + document.getElementById('h1').value + '. Motivo: ' + document.getElementById('m1').value);">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input id="n1" class="card px-3 py-2" placeholder="Nombre del acudiente" required>
+          <input id="n2" class="card px-3 py-2" placeholder="Nombre del paciente" required>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <input id="t1" class="card px-3 py-2" type="tel" placeholder="Teléfono / WhatsApp" required>
+          <input id="e1" class="card px-3 py-2" type="email" placeholder="Email (opcional)">
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <input id="f1" class="card px-3 py-2" type="date" placeholder="Fecha preferida">
+          <input id="h1" class="card px-3 py-2" type="time" placeholder="Hora preferida">
+        </div>
+        <textarea id="m1" class="card px-3 py-2" rows="5" placeholder="Motivo de consulta (asma, tos, alergias, controles, etc.)" required></textarea>
+        <div class="flex flex-wrap gap-3">
+          <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+          <a class="btn btn-outline" href="tel:+573122102382">Llamar</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="border-t">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="y"></span> Consultorio de Neumología Pediátrica — Dra. Gloria Inés Delgado Maya.</p>
+      <div class="flex items-center gap-4 text-sm text-slate-500">
+        <a href="#ubicacion" class="hover:text-slate-700 flex items-center gap-1">🗺️ Cómo llegar</a>
+        <a href="#contacto" class="hover:text-slate-700 flex items-center gap-1">📱 Agendar</a>
+        <span class="hover:text-slate-700">Privacidad</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/573175411532" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600" aria-label="WhatsApp">✉️</a>
+
+  <script>
+    // Menú móvil
+    const menuBtn=document.getElementById('menuBtn');const mobileMenu=document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click',()=>mobileMenu.classList.toggle('hidden'));
+    // Año footer
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
